@@ -4,7 +4,7 @@ const path= require('path');
 
 app.use(express.static(__dirname + '/dist'));
 
-app.listen(process.env.Port || 8080);
+app.listen(8080);
 
 app.get('/*',(req,res)=>{
     res.sendFile(path.join(__dirname + '/dist/index.html'));
